@@ -63,8 +63,11 @@ class _MyListState extends State<MyList> {
                   },
                   subtitle: isprintBody(titleINdex, index)
                       ? Container(
-                          child: Text(body[titleINdex],
-                          style: TextStyle(backgroundColor: Colors.grey, color: Colors.black),
+                          child: Text(
+                            body[titleINdex],
+                            style: TextStyle(
+                                backgroundColor: Colors.grey,
+                                color: Colors.black),
                           ),
                         )
                       : Container(),
