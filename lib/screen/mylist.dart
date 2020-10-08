@@ -24,7 +24,7 @@ class _MyListState extends State<MyList> {
     'body 4',
     'body 5'
   ];
-  
+
   bool isprintBody(int i, int j) {
     if (i == j) {
       return true;
@@ -63,7 +63,9 @@ class _MyListState extends State<MyList> {
                   },
                   subtitle: isprintBody(titleINdex, index)
                       ? Container(
-                          child: Text(body[titleINdex]),
+                          child: Text(body[titleINdex],
+                          style: TextStyle(backgroundColor: Colors.grey, color: Colors.black),
+                          ),
                         )
                       : Container(),
                 ),
