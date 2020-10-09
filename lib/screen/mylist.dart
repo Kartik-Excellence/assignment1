@@ -18,7 +18,7 @@ class _MyListState extends State<MyList> {
     'title-5'
   ];
   List<String> body = <String>[
-    'body 1',
+    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     'body 2',
     'body 3',
     'body 4',
@@ -40,6 +40,7 @@ class _MyListState extends State<MyList> {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Accordian'),
+          
         ),
         body: ListView.builder(
           itemCount: title.length,
@@ -50,7 +51,7 @@ class _MyListState extends State<MyList> {
                   title: Text(
                     '${title[index]}',
                     style: TextStyle(
-                        color: Colors.white, backgroundColor: Colors.red),
+                        color: Colors.black, backgroundColor: Colors.grey),
                   ),
                   onTap: () {
                     //print('ontapfires${title[index]}');
@@ -66,7 +67,7 @@ class _MyListState extends State<MyList> {
                           child: Text(
                             body[titleINdex],
                             style: TextStyle(
-                                backgroundColor: Colors.grey,
+                                backgroundColor: Colors.white,
                                 color: Colors.black),
                           ),
                         )
